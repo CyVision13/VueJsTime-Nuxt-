@@ -3,7 +3,7 @@
     <div>
 
         <home-header></home-header>
-        
+
     </div>
 </div>
 </template>
@@ -21,8 +21,6 @@ export default {}
     align-items: center;
     text-align: center;
 }
-
-
 
 .subtitle {
     font-weight: 300;
