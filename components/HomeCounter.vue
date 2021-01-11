@@ -1,17 +1,28 @@
 <template>
-  <div>
-      <p>Counter is {{counter}}</p>
-      <button @click="counter++">plus</button>
-  </div>
+<div>
+    <p>Counter is {{counter}}</p>
+    <p>initial Counter is {{initial}}</p>
+    <button @click="counter++">plus</button>
+</div>
 </template>
 
 <script>
 export default {
-    data(){
+    // props:[
+    //     'initial'
+    // ],
+    props: {
+        initial: {
+            type: Number,
+            required: true
+        }
+    },
+    data() {
         return {
-            counter :0
+            counter: this.initial
         }
     }
+
 }
 </script>
 

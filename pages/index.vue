@@ -3,7 +3,8 @@
     <div>
 
         <home-header></home-header>
-        <home-counter></home-counter>
+        <home-counter :initial="initial"></home-counter>
+        <button @click="initial++">update prop</button>
     </div>
 </div>
 </template>
@@ -11,7 +12,13 @@
 <script>
 import HomeCounter from '../components/HomeCounter.vue'
 export default {
-  components: { HomeCounter },}
+
+    data() {
+        return {
+            initial: 3
+        }
+    }
+}
 </script>
 
 <style>
