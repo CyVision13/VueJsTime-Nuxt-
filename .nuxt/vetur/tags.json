@@ -1,4 +1,16 @@
 {
+  "HomeActionButtons": {
+    "description": "Auto imported from components/HomeActionButtons.vue"
+  },
+  "LazyHomeActionButtons": {
+    "description": "Auto imported from components/HomeActionButtons.vue"
+  },
+  "HomeCounter": {
+    "description": "Auto imported from components/HomeCounter.vue"
+  },
+  "LazyHomeCounter": {
+    "description": "Auto imported from components/HomeCounter.vue"
+  },
   "HomeHeader": {
     "description": "Auto imported from components/HomeHeader.vue"
   },

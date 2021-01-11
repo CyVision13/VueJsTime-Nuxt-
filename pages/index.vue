@@ -3,13 +3,15 @@
     <div>
 
         <home-header></home-header>
-
+        <home-counter></home-counter>
     </div>
 </div>
 </template>
 
 <script>
-export default {}
+import HomeCounter from '../components/HomeCounter.vue'
+export default {
+  components: { HomeCounter },}
 </script>
 
 <style>
