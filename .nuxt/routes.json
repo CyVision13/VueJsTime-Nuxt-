@@ -7,6 +7,13 @@
     "_name": "_34e81bf5"
   },
   {
+    "name": "methods",
+    "path": "/methods",
+    "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/methods.vue",
+    "chunkName": "pages/methods",
+    "_name": "_35785549"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/index.vue",
