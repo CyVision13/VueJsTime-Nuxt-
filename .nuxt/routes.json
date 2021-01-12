@@ -21,6 +21,13 @@
     "_name": "_35785549"
   },
   {
+    "name": "provide",
+    "path": "/provide",
+    "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/provide.vue",
+    "chunkName": "pages/provide",
+    "_name": "_329e6e90"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/index.vue",

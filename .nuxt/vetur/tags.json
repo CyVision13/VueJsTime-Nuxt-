@@ -34,5 +34,17 @@
   },
   "LazyLogo": {
     "description": "Auto imported from components/Logo.vue"
+  },
+  "ProvideChild": {
+    "description": "Auto imported from components/ProvideChild.vue"
+  },
+  "LazyProvideChild": {
+    "description": "Auto imported from components/ProvideChild.vue"
+  },
+  "ProvideChildNested": {
+    "description": "Auto imported from components/ProvideChildNested.vue"
+  },
+  "LazyProvideChildNested": {
+    "description": "Auto imported from components/ProvideChildNested.vue"
   }
 }
