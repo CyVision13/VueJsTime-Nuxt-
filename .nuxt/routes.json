@@ -42,6 +42,13 @@
     "_name": "_b20b4be8"
   },
   {
+    "name": "watch",
+    "path": "/watch",
+    "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/watch.vue",
+    "chunkName": "pages/watch",
+    "_name": "_6c40eba6"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/index.vue",
