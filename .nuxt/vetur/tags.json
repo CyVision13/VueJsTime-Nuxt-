@@ -52,5 +52,11 @@
   },
   "LazyProvideChildNested": {
     "description": "Auto imported from components/ProvideChildNested.vue"
+  },
+  "SlotChildComponent": {
+    "description": "Auto imported from components/SlotChildComponent.vue"
+  },
+  "LazySlotChildComponent": {
+    "description": "Auto imported from components/SlotChildComponent.vue"
   }
 }

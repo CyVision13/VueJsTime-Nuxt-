@@ -35,6 +35,13 @@
     "_name": "_329e6e90"
   },
   {
+    "name": "slots",
+    "path": "/slots",
+    "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/slots.vue",
+    "chunkName": "pages/slots",
+    "_name": "_b20b4be8"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/index.vue",
