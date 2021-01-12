@@ -1,5 +1,12 @@
 [
   {
+    "name": "life",
+    "path": "/life",
+    "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/life.vue",
+    "chunkName": "pages/life",
+    "_name": "_34e81bf5"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/index.vue",
