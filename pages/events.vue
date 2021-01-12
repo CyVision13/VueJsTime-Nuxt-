@@ -11,7 +11,16 @@ export default {
   methods:{
     onSuccess(param){
       console.log('success',param);
+    },
+    busHandler(){
+      console.log(param);
     }
+  },
+  mounted(){
+    this.$nuxt.$on('onDelete',this.busHandler)
+  },
+  beforeDestroy(){
+    this.$nuxt.$off('onDelete',this.busHandler)
   }
 }
 </script>

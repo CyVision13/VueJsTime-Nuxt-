@@ -5,6 +5,12 @@
   "LazyEventsChild": {
     "description": "Auto imported from components/EventsChild.vue"
   },
+  "EventsChildNested": {
+    "description": "Auto imported from components/EventsChildNested.vue"
+  },
+  "LazyEventsChildNested": {
+    "description": "Auto imported from components/EventsChildNested.vue"
+  },
   "HomeActionButtons": {
     "description": "Auto imported from components/HomeActionButtons.vue"
   },
