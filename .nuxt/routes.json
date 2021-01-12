@@ -1,37 +1,38 @@
 [
   {
+    "name": "binding",
+    "path": "/binding",
+    "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/binding.vue",
+    "chunkName": "pages/binding"
+  },
+  {
     "name": "events",
     "path": "/events",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/events.vue",
-    "chunkName": "pages/events",
-    "_name": "_60286352"
+    "chunkName": "pages/events"
   },
   {
     "name": "life",
     "path": "/life",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/life.vue",
-    "chunkName": "pages/life",
-    "_name": "_34e81bf5"
+    "chunkName": "pages/life"
   },
   {
     "name": "methods",
     "path": "/methods",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/methods.vue",
-    "chunkName": "pages/methods",
-    "_name": "_35785549"
+    "chunkName": "pages/methods"
   },
   {
     "name": "provide",
     "path": "/provide",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/provide.vue",
-    "chunkName": "pages/provide",
-    "_name": "_329e6e90"
+    "chunkName": "pages/provide"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_4cd99629"
+    "chunkName": "pages/index"
   }
 ]
