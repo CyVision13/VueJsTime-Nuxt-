@@ -12,9 +12,17 @@ export default {
     //     'initial'
     // ],
     props: {
+        defaultInitialValue:{
+            type:Number,
+            required:true
+        },
         initial: {
             type: Number,
-            required: true
+            // required: true,
+            // default:13
+            default(){
+                return this.defaultInitialValue
+            }
         }
     },
     data() {

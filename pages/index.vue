@@ -3,7 +3,7 @@
     <div>
 
         <home-header></home-header>
-        <home-counter :initial="initial"></home-counter>
+        <home-counter :defaultInitialValue="10" :initial="initial"></home-counter>
         <button @click="initial++">update prop</button>
     </div>
 </div>
