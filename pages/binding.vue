@@ -12,6 +12,8 @@
      <!-- <div :style="isActive? 'color:white' : ''"> 
         style binding
     </div> -->
+    <hr>
+    <binding-child a="a" b="b"></binding-child>
 </div>
 </template>
 

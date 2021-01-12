@@ -1,4 +1,10 @@
 {
+  "BindingChild": {
+    "description": "Auto imported from components/BindingChild.vue"
+  },
+  "LazyBindingChild": {
+    "description": "Auto imported from components/BindingChild.vue"
+  },
   "EventsChild": {
     "description": "Auto imported from components/EventsChild.vue"
   },
