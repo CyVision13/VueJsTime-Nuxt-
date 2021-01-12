@@ -28,6 +28,13 @@
     "_name": "_35785549"
   },
   {
+    "name": "product",
+    "path": "/product",
+    "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/product/index.vue",
+    "chunkName": "pages/product/index",
+    "_name": "_1882da09"
+  },
+  {
     "name": "provide",
     "path": "/provide",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/provide.vue",
@@ -61,6 +68,20 @@
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/product/_slug/index.vue",
     "chunkName": "pages/product/_slug/index",
     "_name": "_20216a84"
+  },
+  {
+    "name": "product-slug-id",
+    "path": "/product/:slug/:id",
+    "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/product/_slug/_id/index.vue",
+    "chunkName": "pages/product/_slug/_id/index",
+    "_name": "_7b79a36f"
+  },
+  {
+    "name": "search-all",
+    "path": "/search/*",
+    "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/search/_.vue",
+    "chunkName": "pages/search/_",
+    "_name": "_56ef8f9e"
   },
   {
     "name": "index",

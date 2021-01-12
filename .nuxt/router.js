@@ -8,11 +8,14 @@ const _5aad169c = () => interopDefault(import('../pages/binding.vue' /* webpackC
 const _60286352 = () => interopDefault(import('../pages/events.vue' /* webpackChunkName: "pages/events" */))
 const _34e81bf5 = () => interopDefault(import('../pages/life.vue' /* webpackChunkName: "pages/life" */))
 const _35785549 = () => interopDefault(import('../pages/methods.vue' /* webpackChunkName: "pages/methods" */))
+const _1882da09 = () => interopDefault(import('../pages/product/index.vue' /* webpackChunkName: "pages/product/index" */))
 const _329e6e90 = () => interopDefault(import('../pages/provide.vue' /* webpackChunkName: "pages/provide" */))
 const _2a7b0b5d = () => interopDefault(import('../pages/ref-parent.vue' /* webpackChunkName: "pages/ref-parent" */))
 const _b20b4be8 = () => interopDefault(import('../pages/slots.vue' /* webpackChunkName: "pages/slots" */))
 const _6c40eba6 = () => interopDefault(import('../pages/watch.vue' /* webpackChunkName: "pages/watch" */))
 const _20216a84 = () => interopDefault(import('../pages/product/_slug/index.vue' /* webpackChunkName: "pages/product/_slug/index" */))
+const _7b79a36f = () => interopDefault(import('../pages/product/_slug/_id/index.vue' /* webpackChunkName: "pages/product/_slug/_id/index" */))
+const _56ef8f9e = () => interopDefault(import('../pages/search/_.vue' /* webpackChunkName: "pages/search/_" */))
 const _4cd99629 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
@@ -48,6 +51,10 @@ export const routerOptions = {
     component: _35785549,
     name: "methods"
   }, {
+    path: "/product",
+    component: _1882da09,
+    name: "product"
+  }, {
     path: "/provide",
     component: _329e6e90,
     name: "provide"
@@ -67,6 +74,14 @@ export const routerOptions = {
     path: "/product/:slug",
     component: _20216a84,
     name: "product-slug"
+  }, {
+    path: "/product/:slug/:id",
+    component: _7b79a36f,
+    name: "product-slug-id"
+  }, {
+    path: "/search/*",
+    component: _56ef8f9e,
+    name: "search-all"
   }, {
     path: "/",
     component: _4cd99629,
