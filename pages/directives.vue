@@ -17,6 +17,13 @@
             <li :key="index">{{index }} : {{item.productName}}</li>        
         </template>
     </ul>
+
+    <ul>
+        <h3>use Object istead of Array</h3>
+        <template v-for="(item,key,index) in lists">
+            <li :key="key">{{key }}-{{index}} : {{item.productName}}</li>        
+        </template>
+    </ul>
 </div>
 </template>
 
@@ -40,7 +47,25 @@ export default {
                     id: 4,
                     productName: 'Xiaomi Note 8 Pro'
                 }
-            ]
+            ],
+            lists:{
+                a:{
+                    id: 1,
+                    productName: 'samsung-s8'
+                },
+                b:{
+                    id: 2,
+                    productName: 'samsung-s10'
+                },
+                c:{
+                    id: 3,
+                    productName: 'Honor20X'
+                },
+                d:{
+                    id: 4,
+                    productName: 'Xiaomi Note 8 Pro'
+                }
+            }
         }
     },
     computed:{
