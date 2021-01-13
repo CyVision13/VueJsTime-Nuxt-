@@ -1,13 +1,13 @@
 export default {
     // Global page headers (https://go.nuxtjs.dev/config-head)
     head: {
-        title: 'vuejstime',
+        title: "vuejstime",
         meta: [
-            { charset: 'utf-8' },
-            { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-            { hid: 'description', name: 'description', content: '' },
+            { charset: "utf-8" },
+            { name: "viewport", content: "width=device-width, initial-scale=1" },
+            { hid: "description", name: "description", content: "" },
         ],
-        link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+        link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },
 
     // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -28,9 +28,9 @@ export default {
     // Modules (https://go.nuxtjs.dev/config-modules)
     modules: [
         // https://go.nuxtjs.dev/axios
-        '@nuxtjs/axios',
+        "@nuxtjs/axios",
         // https://go.nuxtjs.dev/pwa
-        '@nuxtjs/pwa',
+        "@nuxtjs/pwa",
     ],
 
     // Axios module configuration (https://go.nuxtjs.dev/config-axios)
@@ -39,12 +39,13 @@ export default {
     // Build Configuration (https://go.nuxtjs.dev/config-build)
     build: {},
     router: {
+        middleware: "apiMiddleware",
         parseQuery(query) {
-            return require('qs').parse(query)
+            return require("qs").parse(query);
         },
         stringifyQuery(query) {
-            const result = require('qs').stringify(query)
-            return result ? '?' + result : ''
-        }
-    }
-}
+            const result = require("qs").stringify(query);
+            return result ? "?" + result : "";
+        },
+    },
+};
