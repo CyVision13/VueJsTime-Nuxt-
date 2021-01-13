@@ -12,10 +12,11 @@
 <script>
 export default {
     name: "search",
-    beforeMount(){
-        console.log('query',this.$route.query);
+    beforeMount() {
+        console.log('query', this.$route.query);
     },
     mounted() {
+
         console.log(this.$route.params);
         // setTimeout(()=>{
         //     this.$router.push({name:'product-slug',params:{slug:'sumsong-s13'}})
@@ -26,9 +27,14 @@ export default {
             return this.$route.params.pathMatch.split('/')
         }
     },
-    methods:{
-        pushQuery(){
-            this.$router.push({query:{search_key:'samsung',brand_id:1}})
+    methods: {
+        pushQuery() {
+            this.$router.push({
+                query: {
+                    search_key: 'samsung',
+                    brand_id: 1
+                }
+            })
         }
     }
 }
