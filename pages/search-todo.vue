@@ -18,24 +18,29 @@ export default {
     return {
       title: "",
       list: [],
-      loading: false,
+      loading: 0,
     };
   },
   methods: {
     service() {
-      this.loading = true;
+      if (this.source) {
+        this.source.cancel("canceled by user.");
+      }
+      this.source = this.$axios.CancelToken.source();
+      this.loading++;
       return this.$axios
         .$get("https://jsonplaceholder.typicode.com/todos", {
+          cancelToken: this.source.token,
           params: {
             title_like: this.title,
           },
         })
         .then((res) => {
           this.list = res;
-          this.loading = false;
+          this.loading--;
         })
         .catch((err) => {
-          this.loading = false;
+          this.loading--;
           console.log(err);
         });
     },
