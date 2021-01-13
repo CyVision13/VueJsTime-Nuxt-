@@ -35,6 +35,13 @@
     "_name": "_35785549"
   },
   {
+    "name": "nuxt-fetch",
+    "path": "/nuxt-fetch",
+    "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/nuxt-fetch.vue",
+    "chunkName": "pages/nuxt-fetch",
+    "_name": "_16dcd9a9"
+  },
+  {
     "name": "nuxt-life",
     "path": "/nuxt-life",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/nuxt-life.vue",

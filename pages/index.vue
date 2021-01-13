@@ -5,6 +5,7 @@
       <home-counter :defaultInitialValue="10" :initial="initial"></home-counter>
       <button @click="initial++">update prop</button>
       <nuxt-link :to="{name:'nuxt-life'}">nuxt life</nuxt-link>
+      <nuxt-link :to="{name:'nuxt-fetch'}">nuxt fetch</nuxt-link>
     </div>
   </div>
 </template>

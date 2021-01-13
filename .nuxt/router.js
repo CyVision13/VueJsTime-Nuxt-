@@ -9,6 +9,7 @@ const _41dfc386 = () => interopDefault(import('../pages/directives.vue' /* webpa
 const _60286352 = () => interopDefault(import('../pages/events.vue' /* webpackChunkName: "pages/events" */))
 const _34e81bf5 = () => interopDefault(import('../pages/life.vue' /* webpackChunkName: "pages/life" */))
 const _35785549 = () => interopDefault(import('../pages/methods.vue' /* webpackChunkName: "pages/methods" */))
+const _16dcd9a9 = () => interopDefault(import('../pages/nuxt-fetch.vue' /* webpackChunkName: "pages/nuxt-fetch" */))
 const _3c3fef5d = () => interopDefault(import('../pages/nuxt-life.vue' /* webpackChunkName: "pages/nuxt-life" */))
 const _1882da09 = () => interopDefault(import('../pages/product/index.vue' /* webpackChunkName: "pages/product/index" */))
 const _329e6e90 = () => interopDefault(import('../pages/provide.vue' /* webpackChunkName: "pages/provide" */))
@@ -56,6 +57,10 @@ export const routerOptions = {
     path: "/methods",
     component: _35785549,
     name: "methods"
+  }, {
+    path: "/nuxt-fetch",
+    component: _16dcd9a9,
+    name: "nuxt-fetch"
   }, {
     path: "/nuxt-life",
     component: _3c3fef5d,
