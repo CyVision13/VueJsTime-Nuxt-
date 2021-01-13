@@ -7,6 +7,13 @@
     "_name": "_5aad169c"
   },
   {
+    "name": "directives",
+    "path": "/directives",
+    "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/directives.vue",
+    "chunkName": "pages/directives",
+    "_name": "_41dfc386"
+  },
+  {
     "name": "events",
     "path": "/events",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/events.vue",

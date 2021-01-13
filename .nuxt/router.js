@@ -5,6 +5,7 @@ import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
 const _5aad169c = () => interopDefault(import('../pages/binding.vue' /* webpackChunkName: "pages/binding" */))
+const _41dfc386 = () => interopDefault(import('../pages/directives.vue' /* webpackChunkName: "pages/directives" */))
 const _60286352 = () => interopDefault(import('../pages/events.vue' /* webpackChunkName: "pages/events" */))
 const _34e81bf5 = () => interopDefault(import('../pages/life.vue' /* webpackChunkName: "pages/life" */))
 const _35785549 = () => interopDefault(import('../pages/methods.vue' /* webpackChunkName: "pages/methods" */))
@@ -38,6 +39,10 @@ export const routerOptions = {
     path: "/binding",
     component: _5aad169c,
     name: "binding"
+  }, {
+    path: "/directives",
+    component: _41dfc386,
+    name: "directives"
   }, {
     path: "/events",
     component: _60286352,
