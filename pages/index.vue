@@ -6,6 +6,7 @@
       <button @click="initial++">update prop</button>
       <nuxt-link :to="{name:'nuxt-life'}">nuxt life</nuxt-link>
       <nuxt-link :to="{name:'nuxt-fetch'}">nuxt fetch</nuxt-link>
+      <nuxt-link :to="{name:'nuxt-middleware'}">nuxt middleware</nuxt-link>
     </div>
   </div>
 </template>
