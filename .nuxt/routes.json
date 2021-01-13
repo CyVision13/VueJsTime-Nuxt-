@@ -112,6 +112,13 @@
     "_name": "_20216a84"
   },
   {
+    "name": "validate-id",
+    "path": "/validate/:id",
+    "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/validate/_id/index.vue",
+    "chunkName": "pages/validate/_id/index",
+    "_name": "_0f1751bd"
+  },
+  {
     "name": "product-slug-id",
     "path": "/product/:slug/:id",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/product/_slug/_id/index.vue",

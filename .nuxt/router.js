@@ -20,6 +20,7 @@ const _4444eae2 = () => interopDefault(import('../pages/search-todo.vue' /* webp
 const _b20b4be8 = () => interopDefault(import('../pages/slots.vue' /* webpackChunkName: "pages/slots" */))
 const _6c40eba6 = () => interopDefault(import('../pages/watch.vue' /* webpackChunkName: "pages/watch" */))
 const _20216a84 = () => interopDefault(import('../pages/product/_slug/index.vue' /* webpackChunkName: "pages/product/_slug/index" */))
+const _0f1751bd = () => interopDefault(import('../pages/validate/_id/index.vue' /* webpackChunkName: "pages/validate/_id/index" */))
 const _7b79a36f = () => interopDefault(import('../pages/product/_slug/_id/index.vue' /* webpackChunkName: "pages/product/_slug/_id/index" */))
 const _56ef8f9e = () => interopDefault(import('../pages/search/_.vue' /* webpackChunkName: "pages/search/_" */))
 const _4cd99629 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
@@ -104,6 +105,10 @@ export const routerOptions = {
     path: "/product/:slug",
     component: _20216a84,
     name: "product-slug"
+  }, {
+    path: "/validate/:id",
+    component: _0f1751bd,
+    name: "validate-id"
   }, {
     path: "/product/:slug/:id",
     component: _7b79a36f,
