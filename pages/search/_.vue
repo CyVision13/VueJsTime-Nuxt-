@@ -1,6 +1,7 @@
 <template>
 <div>
     <button @click="pushQuery">push query</button>
+    <button @click="appendQuery">Append query</button>
     <h1>search</h1>
     <nuxt-link :to="{name:'product-slug',params:{slug:'samsung-s5'},query:{sorn:true}}">go to product</nuxt-link>
     <ul>
@@ -32,7 +33,15 @@ export default {
             this.$router.push({
                 query: {
                     search_key: 'samsung',
-                    brand_id: 1
+                    brand_id: [1, 2, 'slugA']
+                }
+            })
+        },
+        appendQuery() {
+            this.$router.push({
+                query: {
+                    ...this.$route.query,
+                    a: 'aaaaaaa'
                 }
             })
         }

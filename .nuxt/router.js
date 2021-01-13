@@ -88,6 +88,13 @@ export const routerOptions = {
     name: "index"
   }],
 
+  parseQuery: function(query) {
+            return require('qs').parse(query)
+        },
+  stringifyQuery: function(query) {
+            const result = require('qs').stringify(query)
+            return result ? '?' + result : ''
+        },
   fallback: false
 }
 
