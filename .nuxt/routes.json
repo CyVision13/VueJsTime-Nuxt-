@@ -70,6 +70,13 @@
     "_name": "_2a7b0b5d"
   },
   {
+    "name": "search-todo",
+    "path": "/search-todo",
+    "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/search-todo.vue",
+    "chunkName": "pages/search-todo",
+    "_name": "_4444eae2"
+  },
+  {
     "name": "slots",
     "path": "/slots",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/slots.vue",

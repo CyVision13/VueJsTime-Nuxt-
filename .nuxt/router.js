@@ -14,6 +14,7 @@ const _3c3fef5d = () => interopDefault(import('../pages/nuxt-life.vue' /* webpac
 const _1882da09 = () => interopDefault(import('../pages/product/index.vue' /* webpackChunkName: "pages/product/index" */))
 const _329e6e90 = () => interopDefault(import('../pages/provide.vue' /* webpackChunkName: "pages/provide" */))
 const _2a7b0b5d = () => interopDefault(import('../pages/ref-parent.vue' /* webpackChunkName: "pages/ref-parent" */))
+const _4444eae2 = () => interopDefault(import('../pages/search-todo.vue' /* webpackChunkName: "pages/search-todo" */))
 const _b20b4be8 = () => interopDefault(import('../pages/slots.vue' /* webpackChunkName: "pages/slots" */))
 const _6c40eba6 = () => interopDefault(import('../pages/watch.vue' /* webpackChunkName: "pages/watch" */))
 const _20216a84 = () => interopDefault(import('../pages/product/_slug/index.vue' /* webpackChunkName: "pages/product/_slug/index" */))
@@ -77,6 +78,10 @@ export const routerOptions = {
     path: "/ref-parent",
     component: _2a7b0b5d,
     name: "ref-parent"
+  }, {
+    path: "/search-todo",
+    component: _4444eae2,
+    name: "search-todo"
   }, {
     path: "/slots",
     component: _b20b4be8,
