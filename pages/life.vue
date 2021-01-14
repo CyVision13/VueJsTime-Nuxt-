@@ -7,6 +7,15 @@
 
 <script>
 export default {
+  fetch(){
+    console.log('fetch');
+  },
+  asyncData(){
+    console.log('asyncData');
+  },
+  middleware(){
+    console.log('middleware');
+  },
   beforeCreate() {
     console.log("before Create");
   },

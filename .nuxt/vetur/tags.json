@@ -64,5 +64,11 @@
   },
   "LazySlotChildComponent": {
     "description": "Auto imported from components/SlotChildComponent.vue"
+  },
+  "AppTextInput": {
+    "description": "Auto imported from components/ui/AppTextInput.vue"
+  },
+  "LazyAppTextInput": {
+    "description": "Auto imported from components/ui/AppTextInput.vue"
   }
 }
