@@ -21,6 +21,13 @@
     "_name": "_60286352"
   },
   {
+    "name": "form",
+    "path": "/form",
+    "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/form.vue",
+    "chunkName": "pages/form",
+    "_name": "_17f155bd"
+  },
+  {
     "name": "life",
     "path": "/life",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/life.vue",
