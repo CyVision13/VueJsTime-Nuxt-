@@ -3,147 +3,126 @@
     "name": "binding",
     "path": "/binding",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/binding.vue",
-    "chunkName": "pages/binding",
-    "_name": "_5aad169c"
+    "chunkName": "pages/binding"
   },
   {
     "name": "directives",
     "path": "/directives",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/directives.vue",
-    "chunkName": "pages/directives",
-    "_name": "_41dfc386"
+    "chunkName": "pages/directives"
   },
   {
     "name": "events",
     "path": "/events",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/events.vue",
-    "chunkName": "pages/events",
-    "_name": "_60286352"
+    "chunkName": "pages/events"
   },
   {
     "name": "form",
     "path": "/form",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/form.vue",
-    "chunkName": "pages/form",
-    "_name": "_17f155bd"
+    "chunkName": "pages/form"
   },
   {
     "name": "life",
     "path": "/life",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/life.vue",
-    "chunkName": "pages/life",
-    "_name": "_34e81bf5"
+    "chunkName": "pages/life"
   },
   {
     "name": "login",
     "path": "/login",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/login.vue",
-    "chunkName": "pages/login",
-    "_name": "_16813940"
+    "chunkName": "pages/login"
   },
   {
     "name": "methods",
     "path": "/methods",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/methods.vue",
-    "chunkName": "pages/methods",
-    "_name": "_35785549"
+    "chunkName": "pages/methods"
   },
   {
     "name": "nuxt-fetch",
     "path": "/nuxt-fetch",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/nuxt-fetch.vue",
-    "chunkName": "pages/nuxt-fetch",
-    "_name": "_16dcd9a9"
+    "chunkName": "pages/nuxt-fetch"
   },
   {
     "name": "nuxt-life",
     "path": "/nuxt-life",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/nuxt-life.vue",
-    "chunkName": "pages/nuxt-life",
-    "_name": "_3c3fef5d"
+    "chunkName": "pages/nuxt-life"
   },
   {
     "name": "nuxt-middleware",
     "path": "/nuxt-middleware",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/nuxt-middleware.vue",
-    "chunkName": "pages/nuxt-middleware",
-    "_name": "_4d1fe433"
+    "chunkName": "pages/nuxt-middleware"
   },
   {
     "name": "product",
     "path": "/product",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/product/index.vue",
-    "chunkName": "pages/product/index",
-    "_name": "_1882da09"
+    "chunkName": "pages/product/index"
   },
   {
     "name": "provide",
     "path": "/provide",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/provide.vue",
-    "chunkName": "pages/provide",
-    "_name": "_329e6e90"
+    "chunkName": "pages/provide"
   },
   {
     "name": "ref-parent",
     "path": "/ref-parent",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/ref-parent.vue",
-    "chunkName": "pages/ref-parent",
-    "_name": "_2a7b0b5d"
+    "chunkName": "pages/ref-parent"
   },
   {
     "name": "search-todo",
     "path": "/search-todo",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/search-todo.vue",
-    "chunkName": "pages/search-todo",
-    "_name": "_4444eae2"
+    "chunkName": "pages/search-todo"
   },
   {
     "name": "slots",
     "path": "/slots",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/slots.vue",
-    "chunkName": "pages/slots",
-    "_name": "_b20b4be8"
+    "chunkName": "pages/slots"
   },
   {
     "name": "watch",
     "path": "/watch",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/watch.vue",
-    "chunkName": "pages/watch",
-    "_name": "_6c40eba6"
+    "chunkName": "pages/watch"
   },
   {
     "name": "product-slug",
     "path": "/product/:slug",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/product/_slug/index.vue",
-    "chunkName": "pages/product/_slug/index",
-    "_name": "_20216a84"
+    "chunkName": "pages/product/_slug/index"
   },
   {
     "name": "validate-id",
     "path": "/validate/:id",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/validate/_id/index.vue",
-    "chunkName": "pages/validate/_id/index",
-    "_name": "_0f1751bd"
+    "chunkName": "pages/validate/_id/index"
   },
   {
     "name": "product-slug-id",
     "path": "/product/:slug/:id",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/product/_slug/_id/index.vue",
-    "chunkName": "pages/product/_slug/_id/index",
-    "_name": "_7b79a36f"
+    "chunkName": "pages/product/_slug/_id/index"
   },
   {
     "name": "search-all",
     "path": "/search/*",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/search/_.vue",
-    "chunkName": "pages/search/_",
-    "_name": "_56ef8f9e"
+    "chunkName": "pages/search/_"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_4cd99629"
+    "chunkName": "pages/index"
   }
 ]

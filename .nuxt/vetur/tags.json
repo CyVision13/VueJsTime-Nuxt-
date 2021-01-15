@@ -65,6 +65,12 @@
   "LazySlotChildComponent": {
     "description": "Auto imported from components/SlotChildComponent.vue"
   },
+  "AppNumberPicker": {
+    "description": "Auto imported from components/ui/AppNumberPicker.vue"
+  },
+  "LazyAppNumberPicker": {
+    "description": "Auto imported from components/ui/AppNumberPicker.vue"
+  },
   "AppTextInput": {
     "description": "Auto imported from components/ui/AppTextInput.vue"
   },
