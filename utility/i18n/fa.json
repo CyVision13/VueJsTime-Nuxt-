@@ -1,0 +1,16 @@
+{
+    "messages": {
+        "validation": {
+            "min": "{_field_} باید حداقل  {length} کاراکتر باشد  ",
+            "required": "{_field_} الزامی است",
+            "email": "{_field_} نا معتبر است"
+        }
+    },
+    "placeholder": {
+        "default": "...  را وارد نمایید {0}",
+        "selected": "...  را انتخاب نمایید {0}"
+
+
+    },
+    "logout": "خروج"
+}

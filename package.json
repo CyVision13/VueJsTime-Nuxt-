@@ -15,7 +15,10 @@
     "@nuxtjs/pwa": "^3.0.2",
     "core-js": "^3.6.5",
     "nuxt": "^2.14.6",
-    "qs": "^6.9.4"
+    "nuxt-i18n": "^6.18.0",
+    "qs": "^6.9.4",
+    "vee-validate": "^3.4.5",
+    "vue-validate": "^1.0.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",
