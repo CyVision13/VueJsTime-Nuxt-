@@ -14,6 +14,7 @@ const _35785549 = () => interopDefault(import('../pages/methods.vue' /* webpackC
 const _16dcd9a9 = () => interopDefault(import('../pages/nuxt-fetch.vue' /* webpackChunkName: "pages/nuxt-fetch" */))
 const _3c3fef5d = () => interopDefault(import('../pages/nuxt-life.vue' /* webpackChunkName: "pages/nuxt-life" */))
 const _4d1fe433 = () => interopDefault(import('../pages/nuxt-middleware.vue' /* webpackChunkName: "pages/nuxt-middleware" */))
+const _0d5f546c = () => interopDefault(import('../pages/plugin.vue' /* webpackChunkName: "pages/plugin" */))
 const _1882da09 = () => interopDefault(import('../pages/product/index.vue' /* webpackChunkName: "pages/product/index" */))
 const _329e6e90 = () => interopDefault(import('../pages/provide.vue' /* webpackChunkName: "pages/provide" */))
 const _2a7b0b5d = () => interopDefault(import('../pages/ref-parent.vue' /* webpackChunkName: "pages/ref-parent" */))
@@ -82,6 +83,10 @@ export const routerOptions = {
     path: "/nuxt-middleware",
     component: _4d1fe433,
     name: "nuxt-middleware"
+  }, {
+    path: "/plugin",
+    component: _0d5f546c,
+    name: "plugin"
   }, {
     path: "/product",
     component: _1882da09,
