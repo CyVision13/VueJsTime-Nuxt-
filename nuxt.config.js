@@ -1,4 +1,4 @@
-import fa from "./utility/i18n/fa.json ";
+import fa from "./utility/i18n/fa.json";
 
 export default {
     // Global page headers (https://go.nuxtjs.dev/config-head)

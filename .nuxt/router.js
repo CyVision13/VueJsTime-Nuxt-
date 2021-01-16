@@ -46,91 +46,91 @@ export const routerOptions = {
   routes: [{
     path: "/binding",
     component: _5aad169c,
-    name: "binding"
+    name: "binding___fa"
   }, {
     path: "/directives",
     component: _41dfc386,
-    name: "directives"
+    name: "directives___fa"
   }, {
     path: "/events",
     component: _60286352,
-    name: "events"
+    name: "events___fa"
   }, {
     path: "/form",
     component: _17f155bd,
-    name: "form"
+    name: "form___fa"
   }, {
     path: "/life",
     component: _34e81bf5,
-    name: "life"
+    name: "life___fa"
   }, {
     path: "/login",
     component: _16813940,
-    name: "login"
+    name: "login___fa"
   }, {
     path: "/methods",
     component: _35785549,
-    name: "methods"
+    name: "methods___fa"
   }, {
     path: "/nuxt-fetch",
     component: _16dcd9a9,
-    name: "nuxt-fetch"
+    name: "nuxt-fetch___fa"
   }, {
     path: "/nuxt-life",
     component: _3c3fef5d,
-    name: "nuxt-life"
+    name: "nuxt-life___fa"
   }, {
     path: "/nuxt-middleware",
     component: _4d1fe433,
-    name: "nuxt-middleware"
+    name: "nuxt-middleware___fa"
   }, {
     path: "/plugin",
     component: _0d5f546c,
-    name: "plugin"
+    name: "plugin___fa"
   }, {
     path: "/product",
     component: _1882da09,
-    name: "product"
+    name: "product___fa"
   }, {
     path: "/provide",
     component: _329e6e90,
-    name: "provide"
+    name: "provide___fa"
   }, {
     path: "/ref-parent",
     component: _2a7b0b5d,
-    name: "ref-parent"
+    name: "ref-parent___fa"
   }, {
     path: "/search-todo",
     component: _4444eae2,
-    name: "search-todo"
+    name: "search-todo___fa"
   }, {
     path: "/slots",
     component: _b20b4be8,
-    name: "slots"
+    name: "slots___fa"
   }, {
     path: "/watch",
     component: _6c40eba6,
-    name: "watch"
+    name: "watch___fa"
   }, {
     path: "/product/:slug",
     component: _20216a84,
-    name: "product-slug"
+    name: "product-slug___fa"
   }, {
     path: "/validate/:id",
     component: _0f1751bd,
-    name: "validate-id"
+    name: "validate-id___fa"
   }, {
     path: "/product/:slug/:id",
     component: _7b79a36f,
-    name: "product-slug-id"
+    name: "product-slug-id___fa"
   }, {
     path: "/search/*",
     component: _56ef8f9e,
-    name: "search-all"
+    name: "search-all___fa"
   }, {
     path: "/",
     component: _4cd99629,
-    name: "index"
+    name: "index___fa"
   }],
 
   parseQuery: function(query) {

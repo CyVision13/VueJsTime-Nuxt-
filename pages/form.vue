@@ -1,6 +1,8 @@
 <template>
   <div>
       <h1>form</h1>
+      <label>number: </label>
+      <app-text-input v-model="number"></app-text-input>
       <label>firstName : </label>
       <app-text-input v-model="firstName"></app-text-input>
       <app-number-picker :minValue="3" v-model="count"></app-number-picker>
@@ -16,7 +18,8 @@ export default {
     data(){
         return{
             firstName:'',
-            count : 1
+            count : 1,
+            number:''
         }
     },
     watch:{
