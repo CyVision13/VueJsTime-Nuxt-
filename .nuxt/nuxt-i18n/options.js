@@ -1,4 +1,4 @@
-export const vueI18n = {"fallbackLocale":"fa","messages":{"fa":{"validation":{"min":"{_field_} باید حداقل  {length} کاراکتر باشد  ","required":"{_field_} الزامی است","email":"{_field_} نا معتبر است"}}}}
+export const vueI18n = {"fallbackLocale":"fa","messages":{"fa":{"validation":{"min":"{_field_} باید حداقل  {length} کاراکتر باشد  ","required":"{_field_} الزامی است","email":"{_field_} نا معتبر است","even":"{_field_} فیلد باید زوج باشد"}}}}
 export const vueI18nLoader = false
 export const locales = [{"code":"fa","name":"Persian"}]
 export const defaultLocale = 'fa'
