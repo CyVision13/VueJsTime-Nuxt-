@@ -1,21 +1,35 @@
 <template>
-  <div>
-    <input
-      type="text"
-      v-bind="$attrs"
-      :value="value"
-      v-on="{ ...$listeners, input }"
-    />
-  </div>
+  <validation-provider v-slot="{ errors }" :name="name" :rules="rules">
+    <div>
+      <input
+        type="text"
+        v-bind="$attrs"
+        :value="value"
+        v-on="{ ...$listeners, input }"
+      />
+    </div>
+    <div v-if="errors && errors.length > 0">{{ errors[0] }}</div>
+  </validation-provider>
 </template>
 
 <script>
+import { ValidationObserver } from "vee-validate";
 export default {
+  components: { ValidationObserver },
+  inheritAttrs: false,
   props: {
     value: {
       type: String,
       default: "",
     },
+    name: {
+      type: String,
+      defualt: "",
+    },
+    rules:{
+      type:String,
+      default:''
+    }
   },
   methods: {
     input(e) {

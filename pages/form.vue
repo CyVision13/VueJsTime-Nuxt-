@@ -20,11 +20,16 @@
     <h1>form</h1>
 
     <app-form>
-        <div>
-            <label >title : </label>
-            <app-text-input v-model="form.title" ></app-text-input>
-        </div>
-         </app-form>
+      <div>
+        <label>title : </label>
+        <app-text-input
+          v-model="form.title"
+          :placeholder="$t('placeholder.default', [$t('title')])"
+          name="title"
+          rules="required"
+        ></app-text-input>
+      </div>
+    </app-form>
   </div>
 </template>
 
