@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueI18n from 'vue-i18n'
+import { klona } from 'klona/full'
 import { nuxtI18nSeo } from './seo-head'
 import {
   baseUrl,
@@ -35,7 +36,6 @@ import {
   setLocaleCookie,
   syncVuex
 } from './utils-common'
-import { klona } from '~i18n-klona'
 
 Vue.use(VueI18n)
 
@@ -90,31 +90,16 @@ export default async (context) => {
     // Lazy-loading enabled
     if (lazy) {
       const { loadLanguageAsync } = require('./utils')
-      const i18nFallbackLocale = app.i18n.fallbackLocale
 
-      // Load fallback locale(s).
-      if (i18nFallbackLocale) {
-        let localesToLoadPromises = []
-        if (Array.isArray(i18nFallbackLocale)) {
-          localesToLoadPromises = i18nFallbackLocale.map(fbLocale => loadLanguageAsync(context, fbLocale))
-        } else if (typeof i18nFallbackLocale === 'object') {
-          if (i18nFallbackLocale[newLocale]) {
-            localesToLoadPromises = localesToLoadPromises.concat(i18nFallbackLocale[newLocale].map(fbLocale => loadLanguageAsync(context, fbLocale)))
-          }
-          if (i18nFallbackLocale.default) {
-            localesToLoadPromises = localesToLoadPromises.concat(i18nFallbackLocale.default.map(fbLocale => loadLanguageAsync(context, fbLocale)))
-          }
-        } else if (newLocale !== i18nFallbackLocale) {
-          localesToLoadPromises.push(loadLanguageAsync(context, i18nFallbackLocale))
-        }
-        await Promise.all(localesToLoadPromises)
+      // Load fallback locale.
+      if (app.i18n.fallbackLocale && newLocale !== app.i18n.fallbackLocale) {
+        await loadLanguageAsync(context, app.i18n.fallbackLocale)
       }
 
       await loadLanguageAsync(context, newLocale)
     }
 
     app.i18n.locale = newLocale
-    app.i18n.localeProperties = klona(locales.find(l => l[LOCALE_CODE_KEY] === newLocale) || { code: newLocale })
 
     await syncVuex(store, newLocale, app.i18n.getLocaleMessage(newLocale), { vuex })
 
@@ -200,17 +185,6 @@ export default async (context) => {
     return [null, null]
   }
 
-  const getBrowserLocale = () => {
-    if (process.client && typeof navigator !== 'undefined' && navigator.languages) {
-      // Get browser language either from navigator if running on client side, or from the headers
-      return matchBrowserLocale(locales, navigator.languages)
-    } else if (req && typeof req.headers['accept-language'] !== 'undefined') {
-      return matchBrowserLocale(locales, parseAcceptLanguage(req.headers['accept-language']))
-    } else {
-      return undefined
-    }
-  }
-
   const doDetectBrowserLanguage = route => {
     // Browser detection is ignored if it is a nuxt generate.
     if (process.static && process.server) {
@@ -233,9 +207,11 @@ export default async (context) => {
 
     if (useCookie && (matchedLocale = app.i18n.getLocaleCookie())) {
       // Get preferred language from cookie if present and enabled
-    } else {
-      // Try to get locale from either navigator or header detection
-      matchedLocale = getBrowserLocale()
+    } else if (process.client && typeof navigator !== 'undefined' && navigator.languages) {
+      // Get browser language either from navigator if running on client side, or from the headers
+      matchedLocale = matchBrowserLocale(locales, navigator.languages)
+    } else if (req && typeof req.headers['accept-language'] !== 'undefined') {
+      matchedLocale = matchBrowserLocale(locales, parseAcceptLanguage(req.headers['accept-language']))
     }
 
     const finalLocale = matchedLocale || fallbackLocale
@@ -259,7 +235,6 @@ export default async (context) => {
     i18n.setLocaleCookie = locale => setLocaleCookie(locale, res, { useCookie, cookieDomain, cookieKey, cookieSecure, cookieCrossOrigin })
     i18n.getLocaleCookie = () => getLocaleCookie(req, { useCookie, cookieKey, localeCodes })
     i18n.setLocale = (locale) => loadAndSetLocale(locale)
-    i18n.getBrowserLocale = () => getBrowserLocale()
     i18n.__baseUrl = app.i18n.__baseUrl
   }
 
@@ -269,7 +244,6 @@ export default async (context) => {
   app.i18n = new VueI18n(vueI18nOptions)
   // Initialize locale and fallbackLocale as vue-i18n defaults those to 'en-US' if falsey
   app.i18n.locale = ''
-  app.i18n.localeProperties = { code: '' }
   app.i18n.fallbackLocale = vueI18nOptions.fallbackLocale || ''
   extendVueI18nInstance(app.i18n)
   app.i18n.__baseUrl = resolveBaseUrl(baseUrl, context)
