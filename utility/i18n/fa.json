@@ -5,15 +5,16 @@
             "required": "{_field_} الزامی است",
             "email": "{_field_} نا معتبر است",
             "even": "{_field_} فیلد باید زوج باشد"
-        }
-    },
-    "placeholder": {
-        "default": "...  را وارد نمایید {0}",
-        "selected": "...  را انتخاب نمایید {0}"
+        },
+
+        "placeholder": {
+            "default": "{0} را وارد نمایید...",
+            "selected": "{0} را انتخاب نمایید ..."
 
 
-    },
-    "logout": "خروج",
-    "number": "عدد",
-    "title": "عنوان"
+        },
+        "logout": "خروج",
+        "number": "عدد",
+        "title": "عنوان"
+    }
 }

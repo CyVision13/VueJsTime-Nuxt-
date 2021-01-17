@@ -13,9 +13,9 @@
 </template>
 
 <script>
-import { ValidationObserver } from "vee-validate";
+import { ValidationProvider } from "vee-validate";
 export default {
-  components: { ValidationObserver },
+  components: { ValidationProvider },
   inheritAttrs: false,
   props: {
     value: {
@@ -26,16 +26,17 @@ export default {
       type: String,
       defualt: "",
     },
-    rules:{
-      type:String,
-      default:''
-    }
+    rules: {
+      type: String,
+      default: "",
+    },
   },
   methods: {
     input(e) {
       // short hand method
       this.$emit("input", e.target.value);
     },
+    
   },
 };
 </script>

@@ -19,7 +19,7 @@
 
     <h1>form</h1>
 
-    <app-form>
+    <app-form :on-submit="onSubmit">
       <div>
         <label>title : </label>
         <app-text-input
@@ -29,6 +29,22 @@
           rules="required"
         ></app-text-input>
       </div>
+      <div>
+        <label for="">body :</label>
+        <app-text-input v-model="form.body" name="body" rules="required">
+        </app-text-input>
+      </div>
+      <div>
+        <label for="">user id:</label>
+        <app-text-input
+          v-model="form.userId"
+          type="number"
+          name="userId"
+          rules="required"
+        >
+        </app-text-input>
+      </div>
+      <button type="submit">Submit Form</button>
     </app-form>
   </div>
 </template>
@@ -48,12 +64,18 @@ export default {
     AppNumberPicker,
     ValidationProvider,
     ValidationObserver,
+    AppForm
   },
   data() {
     return {
       firstName: "",
       count: 1,
       number: 3,
+      form: {
+        title: "",
+        body: "",
+        userId: "",
+      },
     };
   },
   watch: {
@@ -62,8 +84,17 @@ export default {
     },
   },
   methods: {
-    onSubmit() {
+    onSubmit1() {
       alert("submit Called!");
+    },
+    onSubmit() {
+      this.$axios
+        .$post("https://jsonplaceholder.typicode.com/posts", this.form)
+        .then(() => {
+          this.form.title = "";
+          this.form.body = "";
+          this.form.userId = "";
+        });
     },
   },
 };
