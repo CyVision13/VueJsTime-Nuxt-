@@ -14,6 +14,13 @@
     "_name": "_41dfc386"
   },
   {
+    "name": "error___fa",
+    "path": "/error",
+    "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/error.vue",
+    "chunkName": "pages/error",
+    "_name": "_dec09742"
+  },
+  {
     "name": "events___fa",
     "path": "/events",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/events.vue",

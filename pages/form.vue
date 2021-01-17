@@ -98,24 +98,22 @@ export default {
       alert("submit Called!");
     },
     onSubmit() {
-      const cc = {ref:this.$refs.form}
-      this.$api._post('/post',{},{cc}).then(()=>{
-
-      }).catch(e=>{
-        
-        
-      })
+      const cc = { ref: this.$refs.form };
+      this.$api
+        ._post("/post", {}, { cc })
+        .then(() => {})
+        .catch((e) => {});
       // this.$axios
-        // .$post("https://jsonplaceholder.typicode.com/posts", this.form)
-        // .then((data) => {
-        //   this.form.title = "";
-        //   this.form.body = "";
-        //   this.form.userId = "";
-        //   this.$refs.form.reset();
+      // .$post("https://jsonplaceholder.typicode.com/posts", this.form)
+      // .then((data) => {
+      //   this.form.title = "";
+      //   this.form.body = "";
+      //   this.form.userId = "";
+      //   this.$refs.form.reset();
 
-        //   this.response.title = data.title;
-        //   this.response.body = data.body;
-        // });
+      //   this.response.title = data.title;
+      //   this.response.body = data.body;
+      // });
     },
   },
 };
