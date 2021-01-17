@@ -98,16 +98,11 @@ export default {
       alert("submit Called!");
     },
     onSubmit() {
-      
-      this.$api.$post('/post',{}).then(()=>{
+      const cc = {ref:this.$refs.form}
+      this.$api._post('/post',{},{cc}).then(()=>{
 
       }).catch(e=>{
-        if(e?.response?.status===422){
-          const data = e.response.data
-          for(let key in data){
-            this.$refs.form.addError(key,data[key])
-          }
-        }
+        
         
       })
       // this.$axios

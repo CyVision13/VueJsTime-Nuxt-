@@ -1,5 +1,6 @@
 import qs from "qs";
-export default function({ $axios }, inject) {
+import { handleErrors, handleResponse } from "../helpers/responseHelper";
+export default function({ $axios, error }, inject) {
     // Create a custom axios instance
     const api = $axios.create({
         headers: {
@@ -16,6 +17,15 @@ export default function({ $axios }, inject) {
     // api.setBaseURL("https://jsonplaceholder.typicode.com/");
     api.setBaseURL("http://6e77g.mocklab.io");
 
-    // Inject to context as $api
+
+    api._post = function(url, body, config = {}) {
+            const { cc, ...requestConfig } = config
+            return api.post(url, body, config).then((response) => {
+                return handleResponse(response, cc)
+            }).catch((e) => {
+                handleErrors(e, cc, error)
+            })
+        }
+        // Inject to context as $api 
     inject("api", api);
 }
