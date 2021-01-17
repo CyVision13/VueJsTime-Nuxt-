@@ -98,17 +98,29 @@ export default {
       alert("submit Called!");
     },
     onSubmit() {
-      this.$axios
-        .$post("https://jsonplaceholder.typicode.com/posts", this.form)
-        .then((data) => {
-          this.form.title = "";
-          this.form.body = "";
-          this.form.userId = "";
-          this.$refs.form.reset();
+      
+      this.$api.$post('/post',{}).then(()=>{
 
-          this.response.title = data.title;
-          this.response.body = data.body;
-        });
+      }).catch(e=>{
+        if(e?.response?.status===422){
+          const data = e.response.data
+          for(let key in data){
+            this.$refs.form.addError(key,data[key])
+          }
+        }
+        
+      })
+      // this.$axios
+        // .$post("https://jsonplaceholder.typicode.com/posts", this.form)
+        // .then((data) => {
+        //   this.form.title = "";
+        //   this.form.body = "";
+        //   this.form.userId = "";
+        //   this.$refs.form.reset();
+
+        //   this.response.title = data.title;
+        //   this.response.body = data.body;
+        // });
     },
   },
 };

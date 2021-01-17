@@ -13,7 +13,8 @@ export default function({ $axios }, inject) {
     });
 
     // Set baseURL to something different
-    api.setBaseURL("https://jsonplaceholder.typicode.com/");
+    // api.setBaseURL("https://jsonplaceholder.typicode.com/");
+    api.setBaseURL("http://6e77g.mocklab.io");
 
     // Inject to context as $api
     inject("api", api);
