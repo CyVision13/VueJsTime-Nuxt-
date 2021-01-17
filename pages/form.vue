@@ -18,8 +18,14 @@
     </validation-observer> -->
 
     <h1>form</h1>
-
-    <app-form :on-submit="onSubmit">
+    <div v-show="response.title && response.body">
+      <div>title</div>
+      <div>{{ response.title }}</div>
+      <hr />
+      <div>body</div>
+      <div>{{ response.body }}</div>
+    </div>
+    <app-form :on-submit="onSubmit" ref="form">
       <div>
         <label>title : </label>
         <app-text-input
@@ -64,7 +70,7 @@ export default {
     AppNumberPicker,
     ValidationProvider,
     ValidationObserver,
-    AppForm
+    AppForm,
   },
   data() {
     return {
@@ -75,6 +81,10 @@ export default {
         title: "",
         body: "",
         userId: "",
+      },
+      response: {
+        title: "",
+        body: "",
       },
     };
   },
@@ -90,10 +100,14 @@ export default {
     onSubmit() {
       this.$axios
         .$post("https://jsonplaceholder.typicode.com/posts", this.form)
-        .then(() => {
+        .then((data) => {
           this.form.title = "";
           this.form.body = "";
           this.form.userId = "";
+          this.$refs.form.reset();
+
+          this.response.title = data.title;
+          this.response.body = data.body;
         });
     },
   },

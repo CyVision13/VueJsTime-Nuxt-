@@ -20,7 +20,7 @@ export default {
     },
     methods:{
         reset(){
-            this.$ref.validation.reset()
+            this.$refs.validation.reset()
         }
     }
 }
