@@ -6,9 +6,9 @@ export default function({ $axios }, inject) {
             common: {
                 Accept: "application/json",
             },
-            paramsSerializer: (params) => {
-                return qs.stringify(params, { array: "brackets" });
-            },
+        },
+        paramsSerializer: (params) => {
+            return qs.stringify(params, { array: "brackets" });
         },
     });
 
