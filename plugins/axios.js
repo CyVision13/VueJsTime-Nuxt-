@@ -8,7 +8,7 @@ export default function({ $axios }, inject) {
             },
         },
         paramsSerializer: (params) => {
-            return qs.stringify(params, { array: "brackets" });
+            return qs.stringify(params, { arrayFormat: "brackets" });
         },
     });
 
