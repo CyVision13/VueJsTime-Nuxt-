@@ -1,6 +1,6 @@
 import qs from "qs";
 import { handleErrors, handleResponse } from "../helpers/responseHelper";
-export default function({ $axios, error }, inject) {
+export default function({ $axios }, inject) {
     // Create a custom axios instance
     const api = $axios.create({
         headers: {
@@ -23,7 +23,7 @@ export default function({ $axios, error }, inject) {
             return api.post(url, body, config).then((response) => {
                 return handleResponse(response, cc)
             }).catch((e) => {
-                handleErrors(e, cc, error)
+                handleErrors(e, cc)
             })
         }
         // Inject to context as $api 
