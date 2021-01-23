@@ -8,7 +8,6 @@ const _5aad169c = () => interopDefault(import('../pages/binding.vue' /* webpackC
 const _41dfc386 = () => interopDefault(import('../pages/directives.vue' /* webpackChunkName: "pages/directives" */))
 const _dec09742 = () => interopDefault(import('../pages/error.vue' /* webpackChunkName: "pages/error" */))
 const _60286352 = () => interopDefault(import('../pages/events.vue' /* webpackChunkName: "pages/events" */))
-const _17f155bd = () => interopDefault(import('../pages/form.vue' /* webpackChunkName: "pages/form" */))
 const _34e81bf5 = () => interopDefault(import('../pages/life.vue' /* webpackChunkName: "pages/life" */))
 const _16813940 = () => interopDefault(import('../pages/login.vue' /* webpackChunkName: "pages/login" */))
 const _35785549 = () => interopDefault(import('../pages/methods.vue' /* webpackChunkName: "pages/methods" */))
@@ -22,6 +21,8 @@ const _2a7b0b5d = () => interopDefault(import('../pages/ref-parent.vue' /* webpa
 const _4444eae2 = () => interopDefault(import('../pages/search-todo.vue' /* webpackChunkName: "pages/search-todo" */))
 const _b20b4be8 = () => interopDefault(import('../pages/slots.vue' /* webpackChunkName: "pages/slots" */))
 const _6c40eba6 = () => interopDefault(import('../pages/watch.vue' /* webpackChunkName: "pages/watch" */))
+const _67dd2184 = () => interopDefault(import('../pages/crud/create.vue' /* webpackChunkName: "pages/crud/create" */))
+const _4e37217f = () => interopDefault(import('../pages/crud/update/_id/index.vue' /* webpackChunkName: "pages/crud/update/_id/index" */))
 const _20216a84 = () => interopDefault(import('../pages/product/_slug/index.vue' /* webpackChunkName: "pages/product/_slug/index" */))
 const _0f1751bd = () => interopDefault(import('../pages/validate/_id/index.vue' /* webpackChunkName: "pages/validate/_id/index" */))
 const _7b79a36f = () => interopDefault(import('../pages/product/_slug/_id/index.vue' /* webpackChunkName: "pages/product/_slug/_id/index" */))
@@ -60,10 +61,6 @@ export const routerOptions = {
     path: "/events",
     component: _60286352,
     name: "events___fa"
-  }, {
-    path: "/form",
-    component: _17f155bd,
-    name: "form___fa"
   }, {
     path: "/life",
     component: _34e81bf5,
@@ -116,6 +113,14 @@ export const routerOptions = {
     path: "/watch",
     component: _6c40eba6,
     name: "watch___fa"
+  }, {
+    path: "/crud/create",
+    component: _67dd2184,
+    name: "crud-create___fa"
+  }, {
+    path: "/crud/update/:id",
+    component: _4e37217f,
+    name: "crud-update-id___fa"
   }, {
     path: "/product/:slug",
     component: _20216a84,

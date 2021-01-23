@@ -28,13 +28,6 @@
     "_name": "_60286352"
   },
   {
-    "name": "form___fa",
-    "path": "/form",
-    "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/form.vue",
-    "chunkName": "pages/form",
-    "_name": "_17f155bd"
-  },
-  {
     "name": "life___fa",
     "path": "/life",
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/life.vue",
@@ -124,6 +117,20 @@
     "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/watch.vue",
     "chunkName": "pages/watch",
     "_name": "_6c40eba6"
+  },
+  {
+    "name": "crud-create___fa",
+    "path": "/crud/create",
+    "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/crud/create.vue",
+    "chunkName": "pages/crud/create",
+    "_name": "_67dd2184"
+  },
+  {
+    "name": "crud-update-id___fa",
+    "path": "/crud/update/:id",
+    "component": "/home/x/Workshop/Nuxt Js/VueJsTime/pages/crud/update/_id/index.vue",
+    "chunkName": "pages/crud/update/_id/index",
+    "_name": "_4e37217f"
   },
   {
     "name": "product-slug___fa",

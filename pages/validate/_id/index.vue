@@ -11,6 +11,9 @@ export default {
     return /^\d+$/.test(params.id)
     
   },
+  asyncData(){
+    console.log('async data executed');
+  }
 };
 </script>
 

@@ -56,10 +56,10 @@
 </template>
 
 <script>
-import AppNumberPicker from "../components/ui/AppNumberPicker.vue";
-import AppTextInput from "../components/ui/AppTextInput.vue";
+import AppNumberPicker from "./../../components/ui/AppNumberPicker.vue";
+import AppTextInput from "./../../components/ui/AppTextInput.vue";
 import { ValidationProvider, ValidationObserver, extend } from "vee-validate";
-import AppForm from "../components/ui/AppForm.vue";
+import AppForm from "./../../components/ui/AppForm.vue";
 
 extend("even", (value) => {
   return value % 2 === 0;
